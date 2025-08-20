@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Student Record Form </title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+
+            fieldset {
+                padding: 20px;
+                margin: 20px;
+                border-radius: 10px;
+                width: 100%;
+            }
+
+            input, select, textarea {
+                margin: 5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <div>
+                    <h2> Personal Information </h2>
+                    <label for="first-name"> State your Full Name (As Enrolled) </label>
+                    <br> 
+                    <input type="text" id="first-name" name="first-name" placeholder="First" required>
+                    <input type="text" id="middle-name" name="middle-name" placeholder="Middle" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+                    <br> <br>
+                    <label for="major"> Major </label>
+                    <br>
+                    <input type="text" id="major" name="major" required>
+                    <br> <br>
+                    <label for="graduation-year"> Expected Year of Graduation </label>
+                    <br>
+                    <input type="number" id="graduation-year" name="graduation-year" required>
+                    <br> <br>
+                    <label for="address"> Address </label>
+                    <br>
+                    <input type="text" id="address" name="address" placeholder="Street Address" required>
+                    <input type="text" id="address" name="address" placeholder="Barangay" required>
+                    <input type="text" id="address" name="address" placeholder="City" required>
+                    <br>
+                    <select id="province-list" required>
+                        <option value=""> (Select a Province) </option>
+                        <option value="ncr"> NCR </option>
+                        <option value="car"> CAR </option>
+                        <option value="region-i"> Region I </option>
+                        <option value="region-ii"> Region II </option>
+                        <option value="region-iii"> Region III </option>
+                        <option value="region-iva"> Region IV-A </option>
+                        <option value="region-ivb"> Region IV-B (MIMAROPA) </option>
+                        <option value="region-v"> Region V </option>
+                        <option value="region-vi"> Region VI </option>
+                        <option value="region-vii"> Region VII </option>
+                        <option value="region-viii"> Region VIII </option>
+                        <option value="region-ix"> Region IX </option>
+                        <option value="region-x"> Region X </option>
+                        <option value="region-xi"> Region XI </option>
+                        <option value="region-xii"> Region XII </option>
+                        <option value="barmm"> BARMM </option>
+                    </select>
+                    <input type="number" id="address" name="address" placeholder="Postal / Zip code" required>
+
+                    <br> <br>
+                    <label for="email"> E-Mail </label>
+                    <br>
+                    <input type="text" id="email" name="email" placeholder="">
+                    <br> <br>
+                    <label for="phone-number"> Phone Number </label>
+                    <br>
+                    <input type="number" id="phone-number" name="phone-number" placeholder="">
+                    <br> <br>
+                    <label for="contact-method"><strong> Preffered Method of Contact </strong></label>
+                    <br>
+                    <label class="content-align-left" for="email-contact"><input type="checkbox" id="email-contact" name="contact-method"> Email </label>
+                    <br>
+                    <label class="content-align-left" for="phone-contact"><input type="checkbox" id="phone-contact" name="contact-method"> Phone </label>
+                    <br>
+                    <label class="content-align-left" for="ms-teams-contact"><input type="checkbox" id="ms-teams-contact" name="contact-method"> MS Teams </label>
+                    <br> <br>
+                    <label for="first-visit"> Date you First Visited the School </label>
+                    <br>
+                    <input type="date" id="first-visit" name="first-visit">
+                    <br> <br>
+                    <label for="describe-yourself"> Describe Yourself in Three words</label>
+                    <br>
+                    <textarea id="describe-yourself" name="describe-yourself" rows="5" cols="50"></textarea>
+                    <br> <br>
+                    <input type="submit" id="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
